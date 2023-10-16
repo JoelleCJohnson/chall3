@@ -1,12 +1,9 @@
 function returnLargestInArray(array){
     let largestVal = array[0]
-    for(let i = 0; i < array.length; i++){
-        for (let j = 1; j < array.length; j++)
-        {
-            if(array[j] > array[i]){
-                largestVal = array[j]
+    for(let i = 1; i < array.length; i++){
+            if(array[i] > largestVal){
+                largestVal = array[i]
             }
-        }
     }
 
     return largestVal;
